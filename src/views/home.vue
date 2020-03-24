@@ -11,7 +11,7 @@
                         <div class="select-arrow-3"></div>
 
                         <select id="select"
-                                onchange="input(document.getElementById('inputCripto').value, 'out', 'select', 'myselect')">
+                            onchange="input(document.getElementById('inputCripto').value, 'out', 'select', 'myselect')">
                             <option value="Bitcoin">Bitcoin</option>
                             <option value="Bitcoin Cash">Bitcoin Cash</option>
                             <option value="Ethereum">Ethereum</option>
@@ -28,12 +28,12 @@
                 </div>
                 <label>
                     <input type="number" step="0.00001" required placeholder="0.0001" id="inputCripto"  min="0.001"
-                           oninput="input(this.value, 'out', 'select', 'myselect')"
-                           onchange="input(this.value, 'out', 'select', 'myselect')">
+                        oninput="input(this.value, 'out', 'select', 'myselect')"
+                        onchange="input(this.value, 'out', 'select', 'myselect')">
                 </label>
             </div>
             <div class="coinObmen">
-                <h2 class="get">Получаете</h2>
+                <h1 class="get">Получаете</h1>
                 <h6 class="comment">Выберите валюту для получения</h6>
                 <div class="select-wrapper">
                     <div class="select-arrow-3"></div>
@@ -41,7 +41,7 @@
 
                     <label>
                         <select id="myselect"
-                                onchange="input(document.getElementById('inputCripto').value, 'out', 'myselect', 'select')">
+                            onchange="input(document.getElementById('inputCripto').value, 'out', 'myselect', 'select')">
                             <option value="Bitcoin Cash">Bitcoin Cash</option>
                             <option value="Bitcoin">Bitcoin</option>
                             <option value="Ethereum">Ethereum</option>
@@ -58,24 +58,23 @@
                 </div>
                 <label>
                     <input type="number" step="0.00001" required placeholder="0.00001" id="out" min="0.001"
-                           oninput="input(this.value, 'inputCripto', 'myselect', 'select')"
-                           onchange="input(this.value, 'inputCriptov', 'myselect', 'select')">
+                        oninput="input(this.value, 'inputCripto', 'myselect', 'select')"
+                        onchange="input(this.value, 'inputCriptov', 'myselect', 'select')">
                 </label>
             </div>
+        </div>
         </div>
         <h2 class="detal">Детали обмена</h2>
         <div style="display: flex; flex-wrap: wrap; margin-top: 2%">
             <div class="inputForm">
                 <label>
                     <h6 class="form">Ваш E-mail ящик:</h6>
-                    <input type="email" id="Email" class="inpEmail" required placeholder="Например: name@gmail.com">
+                    <input type="email" id="Email" required placeholder="Например: name@gmail.com">
                 </label>
-            </div>
-            <div class="inputForm">
                 <label>
                     <h6 class="form">Кошелёк для получения:</h6>
-                    <input type="text" id="monKey" class="inpkey" required
-                           placeholder="Например: 57hraAvKAqoNSdke84NSIE">
+                    <input type="text" id="monKey" required
+                        placeholder="Например: 57hraAvKAqoNSdke84NSIE">
                 </label>
             </div>
         </div>
